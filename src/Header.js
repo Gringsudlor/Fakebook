@@ -19,13 +19,13 @@ function Header() {
 
         <div className="header__center">
             <div className="header__home">
-                <img src="https://cdn-icons.flaticon.com/png/512/1659/premium/1659146.png?token=exp=1649936454~hmac=1413ba3c58b15e59acc756863bbc5e93" alt="homeIcon"/>
+                <img src="https://cdn-icons-png.flaticon.com/512/6268/6268612.png" alt="homeIcon"/>
             </div>
             <div className="header__game">
                 <img src="https://cdn-icons-png.flaticon.com/512/2797/2797843.png" alt="gameIcon"/>
             </div>
             <div className="header__chat">
-                <img src="https://cdn-icons.flaticon.com/png/512/6188/premium/6188661.png?token=exp=1649936533~hmac=fcb4bf75b14ac0ef6a09e71e3bcc72b9" alt="chatIcon"/>
+                <img src="https://cdn-icons-png.flaticon.com/512/3214/3214461.png" alt="chatIcon"/>
             </div>
         </div>
 

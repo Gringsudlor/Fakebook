@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="app">
       {!user ? (
-        <h1>Login</h1>
+        <Login/>
       ) : (
         <>
         <Header />

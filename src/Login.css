@@ -1,7 +1,11 @@
 .login {
     display: grid;
     place-items: center;
-    height: 100vh;
+    /* height: 100vh; */
+}
+
+.login > .signIn {
+    margin-bottom: 120px;
 }
 
 .login > button {
@@ -9,6 +13,8 @@
     background-color: #451684;
     color: #eff2f5;
     font-weight: 800;
+    margin: 20px;
+    border: 20px;
 }
 
 .login > button:hover {
@@ -18,12 +24,24 @@
 
 .login > div > img {
     object-fit: contain;
-    height: 150px;    
+    height: 150px;  
+    margin-top: 90px;  
 }
 
 .login > div > h1 {
     object-fit: contain;
-    height: 150px;
+    height: 100px;
+}
+
+.login > .user {
+    width: 300px;
+    margin: 10px; 
+}
+
+.login > .pass {
+    width: 300px;
+    margin: 10px;
+    margin-bottom: 60px; 
 }
 
 .login > div {

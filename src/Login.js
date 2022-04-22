@@ -1,4 +1,4 @@
-import { Button } from '@material-ui/core'
+import { Button, TextField } from '@material-ui/core'
 import React from 'react'
 import "./Login.css"
 import { auth, provider, signInWithPopup } from "./firebase"
@@ -22,7 +22,12 @@ function Login() {
                 <h1>Fakebook</h1>
 
             </div>
-            <Button type='submit' onClick={signIn}>
+            <TextField className='user' label='Username' placeholder='Enter username'></TextField>
+            <TextField className='pass' label='Password' placeholder='Enter password' type={'password'} ></TextField>
+            <Button type='submit' >
+                Log In
+            </Button>
+            <Button className='signIn' type='submit' onClick={signIn}>
                 Sign In
             </Button>
             

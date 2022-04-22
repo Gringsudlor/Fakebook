@@ -6,7 +6,8 @@ function Header() {
     return <div className="header">
         <div className="header__left">
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+                //src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+                src='https://cdn-icons-png.flaticon.com/512/3479/3479392.png'
                 alt=""
                 />
 

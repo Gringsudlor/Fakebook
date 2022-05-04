@@ -1,34 +1,43 @@
-import React from "react";
+import React from 'react'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Feed from "./Feed";
 import Login from "./Login";
-import { useStateValue } from "./StateProvider";
+import Home from "./Home";
 
 function App() {
-  const [{ user }, dispatch] = useStateValue();
+  const user = "test"
   return (
-    <div className="app">
-      {!user ? (
-        <Login/>
-      ) : (
-        <>
-        <Header />
+    // <div>
+    //   {!user ? (
+    //     <Login />
+    //   ):(
+    //     <>
 
-        <div className="app__body">
-          <Sidebar />
-          <Feed/>
-        </div>
-        </>
-
-    )}
+    //     <Home />
+    //     </>
+    //   )}
+    // </div>
       
-         
-   
-     
-    </div>
+    
+    <>
+      <Router>
+          <Switch>
+            <Route path='/' exact component={Login} />
+            <Route path='/Feed' component={Home} />
+          </Switch>
+        </Router>
+    </>
   );
 }
 
 export default App;
+
+//<Header />
+
+//<div className="app__body">
+ // <Sidebar />
+
+//</div>
